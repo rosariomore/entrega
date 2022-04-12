@@ -42,6 +42,7 @@ a { text-decoration: none;
     animation-name: animacion;
     animation-duration: 3s;
     animation-delay: 1s;
+    animation-delay: 3s;
     width: 100%;
 }
 .flex-container {
@@ -146,6 +147,7 @@ section p {
     { 
     display: block;
     margin: 20px;
+    background-image: linear-gradient(to top, rgb(194,167,132), rgb(255, 224, 233));
     }
 .container{
     display: block;
