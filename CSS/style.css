@@ -2,15 +2,17 @@
 section { 
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ; 
         }
-.logobruma:hover{
+/* .logobruma:hover{
     width: 150px;
-    transition: width 1s;
-}
+} */
+
 .logobruma{
-    padding-left: 50%;
-    width: 100px;
+    padding-left: 40%;
+    width: 50%;
     margin-top: 15px;
-    }        
+    margin-bottom: 15px;
+    }       
+
 nav ul {
     display: flex;
     background-color: rgb(194, 167, 132);
@@ -126,22 +128,14 @@ a { text-decoration: none;
     }
 }
 /* NOSOTROS */
-section p {
-    height: 600px;
-    width: 400px;
-    background-color: rgb(194, 167, 132);
-    color: white;
-    font-weight: 400;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    width: 975px
-}
-.box-model {
-    background-color: rgb(221, 187, 146);
+.textonosotros{
     text-align: justify;
-    width: 400px;
-    margin: 20px auto 20px auto;
-    padding: 10px;
 }
+.bg-propio {
+    background-color: rgb(160, 134, 102);
+    opacity: .90;
+}
+
 /* VELAS */
 .velas
     { 
@@ -149,7 +143,7 @@ section p {
     margin: 20px;
     background-image: linear-gradient(to top, rgb(194,167,132), rgb(255, 224, 233));
     }
-.container{
+.fondo{
     display: block;
     height: 700px;
     background-image: linear-gradient(to top, rgb(194,167,132), rgb(255, 224, 233));
