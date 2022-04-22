@@ -1,0 +1,31 @@
+@import "vars";
+
+// NOSOTROS
+section{
+    h5{
+        font-family: Special Elite;
+        margin-top: 10px;
+        padding-left: 10%;        
+    }
+    div{
+        text-align: justify;
+    }
+    div{
+        background-color: $colorDos;
+        opacity: .90;
+    }
+    h5{
+        font-family: Special Elite;
+        margin-top: 10px;
+        padding-left: 10%;   
+    }
+    div{
+        p{
+        text-align: justify;
+        padding: 10px;
+        background-color: $colorDos;
+        opacity: .70;
+        color: beige;
+        }
+    }
+}
