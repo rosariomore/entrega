@@ -293,6 +293,16 @@ a:hover {
   opacity: .90;
 }
 
+.nostext {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 @media screen and (max-width: 1200px) {
   .imanos {
     width: 100%;
@@ -318,7 +328,7 @@ a:hover {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    padding: 0%;
+    padding: 5%;
   }
   .nostext {
     text-align: justify;
@@ -347,12 +357,10 @@ a:hover {
 /* VELAS */
 .colorv {
   background-color: #877b6f;
-  height: 575px;
 }
 
 .contvelas {
   background-color: #d4c7b4;
-  height: 650px;
 }
 
 .velas img {
@@ -374,17 +382,52 @@ a:hover {
 
 .textovelas {
   text-align: justify;
-  height: 550px;
   padding: 12px;
   opacity: .70;
   color: white;
 }
 
 .ramahor {
-  padding-left: 10px;
-  margin-top: -70px;
-  z-index: 20;
-  position: absolute;
+  margin-left: 2%;
+  margin-top: -5%;
+  width: 100%;
+}
+
+@media screen and (max-width: 1200px) {
+  .ramahor {
+    margin-left: 35%;
+    margin-top: -2%;
+    position: absolute;
+    z-index: 100;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .ramahor img {
+    margin-left: -10%;
+    margin-top: -2%;
+    position: absolute;
+    z-index: 100;
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .logobruma {
+    margin-left: 10%;
+  }
+  nav ul li {
+    display: inline;
+    text-align: center;
+    font-size: 12px;
+  }
+  .ramahor img {
+    margin-left: -10%;
+    margin-top: -2%;
+    position: absolute;
+    z-index: 100;
+    width: 50%;
+  }
 }
 
 /* DIFUSORES */
@@ -394,6 +437,7 @@ a:hover {
 
 .difusorprincipal {
   margin-top: 5px;
+  height: 100%;
 }
 
 .item {
@@ -433,12 +477,93 @@ a:hover {
   padding-left: 50px;
 }
 
+@media screen and (max-width: 1200px) {
+  .fuente {
+    padding-top: 5%;
+    padding-left: 5%;
+  }
+  .textod {
+    padding-bottom: 50%;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .ramadif {
+    margin-top: -120%;
+    margin-left: 65%;
+    z-index: 30%;
+    position: absolute;
+    -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+  }
+  .imagendif1 {
+    margin: 15%;
+  }
+  .imagendif1 img {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .difusorprincipal img {
+    width: 100%;
+  }
+  .ramadif {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .imagendif1 img {
+    width: 100%;
+  }
+  .imaind {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 10px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .logobruma {
+    padding-left: 10%;
+  }
+  nav ul li {
+    display: inline;
+    text-align: center;
+    font-size: 12px;
+  }
+  .ramadif {
+    display: contents;
+  }
+  .ramadif img {
+    -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+    margin-top: -450%;
+    margin-left: 35%;
+    position: absolute;
+    width: 20%;
+  }
+}
+
 /* LAMINAS */
 .fuentel {
   color: white;
   font-family: 'Special Elite', cursive;
   font-size: x-large;
   margin-left: 120px;
+}
+
+.fondol {
+  background-color: #a08666;
+}
+
+.card {
+  width: 70%;
+  margin: 14%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .card img {
@@ -451,29 +576,20 @@ a:hover {
           transform: scale(1.2);
 }
 
-.containerc-fluid {
-  padding-top: 30px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.fondol {
-  display: block;
-  height: 400px;
-  background-color: #a08666;
-}
-
-.containerc-fluid {
-  background-color: #a08666;
+@media screen and (max-width: 480px) {
+  .logobruma {
+    padding-left: 10%;
+  }
+  nav ul li {
+    display: inline;
+    text-align: center;
+    font-size: 12px;
+  }
 }
 
 /* CONTACTO */
 .fondoc {
-  display: block;
-  height: 400px;
   background-color: #a08666;
-  height: 450px;
 }
 
 .well {
@@ -521,5 +637,49 @@ a:hover {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   list-style: none;
+}
+
+@media screen and (max-width: 1200px) {
+  .imagcont {
+    padding: 0% 20% 2% 10%;
+  }
+  .rama {
+    -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+    margin-top: 10%;
+  }
+  .well {
+    margin-left: 15%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .well {
+    margin-right: 25%;
+  }
+}
+
+@media screen and (max-width: 577px) {
+  .imagcont {
+    display: none;
+    width: 0%;
+  }
+  .rama {
+    -webkit-transform: rotate(-180deg);
+            transform: rotate(-180deg);
+    margin-left: -200%;
+    margin-top: 20%;
+  }
+  .well {
+    padding: 0%;
+    width: 200%;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .rama {
+    margin-left: -250%;
+    margin-top: 20%;
+  }
 }
 /*# sourceMappingURL=style.css.map */

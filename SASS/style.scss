@@ -219,6 +219,10 @@ a:hover{
     background-color: rgb(160, 134, 102);
     opacity: .90;
 }
+.nostext{
+    display: flex;
+    flex-direction: column;
+}
 @media screen and (max-width: 1200px){
 .imanos{
     width: 100%;
@@ -235,7 +239,7 @@ a:hover{
 .nostext{
     display: flex;
     justify-content: center;
-    padding: 0%;
+    padding: 5%;
     }
 .nostext{
     text-align: justify;
@@ -262,11 +266,10 @@ nav ul li{
 /* VELAS */
 .colorv{
    background-color: rgb(135,123,111);
-   height:575px;
 }
 .contvelas{
     background-color: rgb(212,199,180);
-    height: 650px;
+
 }
 .velas{
     img{
@@ -285,23 +288,57 @@ nav ul li{
 }
 .textovelas{    
     text-align: justify;
-    height: 550px;
     padding: 12px;
     opacity: .70;
     color: white;
 }
 .ramahor{
-    padding-left: 10px;
-    margin-top: -70px;
-    z-index: 20;
-    position: absolute;
+    margin-left: 2%;
+    margin-top: -5%;
+    width: 100%;
 }
+@media screen and (max-width: 1200px){
+.ramahor{
+    margin-left: 35%;
+    margin-top: -2%;
+    position: absolute;
+    z-index: 100;
+    }   
+}
+@media screen and (max-width: 576px){
+.ramahor img{
+    margin-left: -10%;
+    margin-top: -2%;
+    position: absolute;
+    z-index: 100;
+    width: 50%;
+        }
+}
+@media screen and (max-width: 480px){
+.logobruma{
+        margin-left: 10%;
+        } 
+nav ul li{
+        display: inline;
+        text-align: center;
+        font-size: 12px;
+    } 
+.ramahor img{
+    margin-left: -10%;
+    margin-top: -2%;
+    position: absolute;
+    z-index: 100;
+    width: 50%;
+        }    
+}
+
 /* DIFUSORES */
 .fondodif{
     background-color: rgb(212,199,180);
 }
 .difusorprincipal{
     margin-top: 5px;
+    height: 100%;
 }
 .item{
     height: 120%;
@@ -324,7 +361,7 @@ nav ul li{
 }
 .imagendif1{
     margin: 0px;
-margin-top: 10px;
+    margin-top: 10px;
     img{
         width: 100%;
     }
@@ -333,6 +370,71 @@ margin-top: 10px;
     margin-top: 50px;
     padding-left: 50px;
 }
+@media screen and (max-width: 1200px){
+.fuente{
+    padding-top: 5%;
+    padding-left: 5%;
+}
+.textod{
+    padding-bottom: 50%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.ramadif{   
+    margin-top: -120%;
+    margin-left: 65%;
+    z-index: 30%;
+    position: absolute;
+    transform: rotate(-90deg);
+    }   
+.imagendif1{
+    margin: 15%;
+    img{
+        width: 70%;
+    } 
+} 
+}
+@media screen and (max-width: 991px){
+.difusorprincipal{
+    img{
+    width: 100%;
+    } 
+}  
+.ramadif{   
+    display: none;
+    }  
+}
+@media screen and (max-width: 480px){
+.imagendif1{
+    img{
+        width: 100%;
+    }
+}
+.imaind{
+        display: flex;
+        margin-top: 10px;
+        justify-content: center;
+    }
+.logobruma{
+        padding-left: 10%;
+        } 
+nav ul li{
+        display: inline;
+        text-align: center;
+        font-size: 12px;
+    } 
+.ramadif{  
+    display: contents; 
+    img{
+        transform: rotate(-90deg);
+        margin-top: -450%;
+        margin-left: 35%;
+        position: absolute;
+        width: 20%;
+    }
+    } 
+}
+
 /* LAMINAS */
 .fuentel{
     color: rgb(255, 255, 255);
@@ -340,7 +442,15 @@ margin-top: 10px;
     font-size: x-large;
     margin-left: 120px;
 }
+
+.fondol{
+    background-color: #a08666;   
+}
 .card{
+    width: 70%;
+    margin: 14%;
+    display: flex;
+
     img{
         width: 100%;
         &:hover{
@@ -349,24 +459,19 @@ margin-top: 10px;
         }
     }
 }
-.containerc-fluid{
-    padding-top: 30px;
-    align-items: center;
-}
-.fondol{
-    display: block;
-    height: 400px;
-    background-color: #a08666;
-}
-.containerc-fluid{
-    background-color: rgb(160, 134, 102)
+@media screen and (max-width: 480px){
+.logobruma{
+        padding-left: 10%;
+        } 
+nav ul li{
+        display: inline;
+        text-align: center;
+        font-size: 12px;
+    } 
 }
 /* CONTACTO */ 
 .fondoc{
-    display: block;
-    height: 400px;
     background-color: #a08666;
-    height: 450px;
 }
 .well{
     font-family: 'Special Elite', cursive;
@@ -404,3 +509,44 @@ margin-top: 10px;
     justify-content: space-around;
     list-style: none;
 }
+@media screen and (max-width: 1200px){
+.imagcont{
+    padding: 0% 20% 2% 10%;
+}
+.rama{
+    transform: rotate(-90deg); 
+    margin-top: 10%;
+}
+.well{
+    margin-left: 15%;    
+}
+}
+@media screen and (max-width: 768px){
+.well{
+    margin-right: 25%;    
+    }   
+}
+@media screen and (max-width: 577px){
+    .imagcont{
+    display: none;
+    width: 0%;
+    }
+.rama{
+    transform: rotate(-180deg); 
+    margin-left: -200%;
+    margin-top: 20%;
+}
+.well{
+    padding: 0%;
+    width: 200%;
+}
+}
+@media screen and (max-width: 420px){
+.rama{
+    margin-left: -250%;
+    margin-top: 20%;
+}
+}
+    
+
+
